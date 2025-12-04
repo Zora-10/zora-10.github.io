@@ -1,7 +1,7 @@
 ---
-title: Python Notes
+title: Python Basic
 date: 2025-12-03 16:08:00 +0800
-categories: [Programming Language, Python]
+categories: [Python, Basic]
 tags: [notes] # TAG names should always be lowercase
 author: zora
 description: "Python Learning Notes"
@@ -257,24 +257,26 @@ for jelly in seq:
 # 246810
 ```
 
-- To loop through a set of code a specified number of times, we can use the range(start, end, interval) function. 
-  > range(x) function creates a sequence of numbers from 0 to x-1
-    ```python
-    my_list = []
+- To loop through a set of code a specified number of times, we can use the range(start, end, interval) function.   
+  > range(x) function creates a sequence of numbers from 0 to x-1 
+  {: .prompt-tip}
 
-    for i in range(10):
-      my_list.append(i)
+  ```python
+  my_list = []
 
-    print(my_list) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  for i in range(10):
+    my_list.append(i)
 
-    # specify interval
-    my_list_2 = []
-    
-    for i in range(1, 10, 2):
-      my_list.append(i)
-    
-    print(my_list_2) # [1, 3, 5, 7, 9]
-    ```
+  print(my_list) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  # specify interval
+  my_list_2 = []
+
+  for i in range(1, 10, 2):
+    my_list.append(i)
+
+  print(my_list_2) # [1, 3, 5, 7, 9]
+  ```
   
 ### Loop over nested list
 ```python
@@ -320,7 +322,8 @@ for key, value in europe.items():
 
 # Functions
 - Function is a piece of reusable code and solves a particular task
-- There are many built-in functions in Python for standard task like `len()`, `print()`, `type()`, `sort()`
+- There are many built-in functions in Python for standard task like `len()`, `print()`, `type()`, `sort()`  
+
 ```python
 fam = [1.73, 1.68, 1.71, 1.89]
 
@@ -331,7 +334,8 @@ max(fam) # 1.89
 - `def` creates a function and assigns it a name
 - `return` sends a result back to the caller
 - *arguments*(参数) are passed by the assignment
-- arguments and return types are not declared
+- arguments and return types are not declared  
+  
 ```python
 def my_fumc(param1='default'):
   print(param1)
@@ -351,7 +355,8 @@ print(out) # 4
 `lambda x: expression`
 - **lambda** - indicates the start of a lambda (or anonymous) function
 - **x** - represents the input parameter or argument to the labmbda function
-- **expression** - represents the operation or calculation that the labmbda function will execute and return
+- **expression** - represents the operation or calculation that the labmbda function will execute and return  
+  
 ``` python
 my_inline_square = lambda x: x**2
 my_inline_square(2)  # 4
