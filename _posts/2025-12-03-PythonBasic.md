@@ -9,7 +9,7 @@ toc: true
 comments: false
 ---
 
-# Data Types
+## Data Types
 > Number, String, Boolean, None, List, Dictionary, Tuple, Set.  
 >  *Mutable*: List, Dictionary, Set
 {: .prompt-info }
@@ -211,8 +211,8 @@ comments: false
    difference = set1 - set2     # {1, 2}
    ```
 
-# Control Flow
-## if, elif, else Statements
+## Control Flow
+### if, elif, else Statements
 ```python
 if 1 < 2:
   print("Yep!")
@@ -233,14 +233,14 @@ if True:
   print('always true')
 ```
 
-## for loop
+### for loop
 - A foor loop iterates through each of the items in a collection type, or any other type of object which is "iterable".
   > `for <item> in <collection>`
 - if `<collection>` is a **list** or **tuple**, then the loop steps through each element of the sequence
 - if `<collection>` is a **string**, then the loop steps through each character of the string
 - if `<collection>` is a **dictionary**, then the loop steps through each key of the dictionary
   
-### Loop over a list
+#### Loop over a list
 ```python
 seq = [1, 2, 3, 4, 5]
 
@@ -278,7 +278,7 @@ for jelly in seq:
   print(my_list_2) # [1, 3, 5, 7, 9]
   ```
   
-### Loop over nested list
+#### Loop over nested list
 ```python
 house = [["hallway", 11.25], 
          ["kitchen", 18.0], 
@@ -295,7 +295,7 @@ for a in house:
 # the bedroom is 10.75 sqm
 # the bathroom is 9.5 sqm
 ```
-### Loop over dictionary
+#### Loop over dictionary
 ```python
 europe = {'spain':'madrid', 
           'france':'paris', 
@@ -320,7 +320,7 @@ for key, value in europe.items():
 # the capital of austria is vienna
 ```
 
-# Functions
+## Functions
 - Function is a piece of reusable code and solves a particular task
 - There are many built-in functions in Python for standard task like `len()`, `print()`, `type()`, `sort()`  
 
@@ -330,7 +330,7 @@ fam = [1.73, 1.68, 1.71, 1.89]
 max(fam) # 1.89
 ```
 
-## Create own function
+### Create own function
 - `def` creates a function and assigns it a name
 - `return` sends a result back to the caller
 - *arguments*(参数) are passed by the assignment
@@ -351,7 +351,7 @@ out = square(2)
 print(out) # 4
 ```
 
-## Inline function
+### Inline function
 `lambda x: expression`
 - **lambda** - indicates the start of a lambda (or anonymous) function
 - **x** - represents the input parameter or argument to the labmbda function
