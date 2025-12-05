@@ -16,7 +16,7 @@ timezone: Asia/Hong_Kong
 
 title: Zora's Note Hub # the main title
 
-tagline: A collection of my learning notes # it will display as the subtitle
+tagline: This is a collection of notes I made from various sources, for easy reference. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   collection of Zora's learning notes
