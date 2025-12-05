@@ -10,11 +10,13 @@ comments: false
 ---
 
 ## Data Types
+>
 > Number, String, Boolean, None, List, Dictionary, Tuple, Set.  
->  *Mutable*: List, Dictionary, Set
+> *Mutable*: List, Dictionary, Set
 {: .prompt-info }
+
 1. Number - `int`, `float`, `complex`  
-   
+
    | Type      | Typical literal         |                                                                                                    Key Traits |
    | :-------- | :---------------------- | ------------------------------------------------------------------------------------------------------------: |
    | `int`     | `42`, `0xFF`            | Whole numbers that can be as large as your memory allows; supports binary `0b`, octal `0o`, hex `0x` literals |
@@ -22,6 +24,7 @@ comments: false
    | `complex` | `2+3j`, `complex(a, b)` |               Numbers with real and imaginary parts (used in advanced math); `.real`, `.imag`, `.conjugate()` |
 
 2. String - `str`  
+
    ```python
    # Creating Strings
    name = "Alice"
@@ -82,7 +85,7 @@ comments: false
    > always use `is` and `is not` when comparing with `None`, not `==`
 
 5. List - `list`: multiple items in order in a single variable by square bracket
-   
+
    ```python
    # Creating lists
    fruits = ["apple", "banana", "orange"]
@@ -114,7 +117,7 @@ comments: false
    ```
 
 6. Dictionary - `dict`: store data as key-value pairs `{key: value pairs}`
-   
+
    ```python
    # Creating dictionaries
    person = {"name": "Alice", "age": 30, "city": "New York"}
@@ -145,8 +148,9 @@ comments: false
    age = student.pop("age")      # Remove and return value
    student.pop("height", None)   # Safe removal (no error if key missing)
    ```
+
 7. Tuple - `tuple`: multiple items in a single variable by parantheses `(element 1, element 2)`
-   
+
    ```python
    # Creating tuples
    coordinates = (10, 20)
@@ -178,7 +182,9 @@ comments: false
    name, age = get_name_age()
 
    ```
+
 8. Sets - `set`: store unique items with no duplicates and no particular order. Great for membership testing and removing duplicates.
+
    ``` python
    # Creating sets
    colors = {"red", "green", "blue"}
@@ -212,7 +218,9 @@ comments: false
    ```
 
 ## Control Flow
+
 ### if, elif, else Statements
+
 ```python
 if 1 < 2:
   print("Yep!")
@@ -234,6 +242,7 @@ if True:
 ```
 
 ### for loop
+
 - A foor loop iterates through each of the items in a collection type, or any other type of object which is "iterable".
   > `for <item> in <collection>`
 - if `<collection>` is a **list** or **tuple**, then the loop steps through each element of the sequence
@@ -241,6 +250,7 @@ if True:
 - if `<collection>` is a **dictionary**, then the loop steps through each key of the dictionary
   
 #### Loop over a list
+
 ```python
 seq = [1, 2, 3, 4, 5]
 
@@ -257,8 +267,8 @@ for jelly in seq:
 # 246810
 ```
 
-- To loop through a set of code a specified number of times, we can use the range(start, end, interval) function.   
-  > range(x) function creates a sequence of numbers from 0 to x-1 
+- To loop through a set of code a specified number of times, we can use the range(start, end, interval) function.
+  > range(x) function creates a sequence of numbers from 0 to x-1
   {: .prompt-tip}
 
   ```python
@@ -279,6 +289,7 @@ for jelly in seq:
   ```
   
 #### Loop over nested list
+
 ```python
 house = [["hallway", 11.25], 
          ["kitchen", 18.0], 
@@ -295,7 +306,9 @@ for a in house:
 # the bedroom is 10.75 sqm
 # the bathroom is 9.5 sqm
 ```
+
 #### Loop over dictionary
+
 ```python
 europe = {'spain':'madrid', 
           'france':'paris', 
@@ -321,6 +334,7 @@ for key, value in europe.items():
 ```
 
 ## Functions
+
 - Function is a piece of reusable code and solves a particular task
 - There are many built-in functions in Python for standard task like `len()`, `print()`, `type()`, `sort()`  
 
@@ -331,6 +345,7 @@ max(fam) # 1.89
 ```
 
 ### Create own function
+
 - `def` creates a function and assigns it a name
 - `return` sends a result back to the caller
 - *arguments*(参数) are passed by the assignment
@@ -352,7 +367,9 @@ print(out) # 4
 ```
 
 ### Inline function
+
 `lambda x: expression`
+
 - **lambda** - indicates the start of a lambda (or anonymous) function
 - **x** - represents the input parameter or argument to the labmbda function
 - **expression** - represents the operation or calculation that the labmbda function will execute and return  
