@@ -561,6 +561,7 @@ plt.bar(x, y, color = "red")
 ### Width
 
 `bar()` takes the keyword argument width to set the width of the bars (default width = 0.8)
+
 ```python
 plt.bar(x, y, width = 0.1)
 ```
@@ -625,5 +626,58 @@ mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
 # Start the first wedge at 90 degrees
 plt.pie(y, labels = mylabels, startangle = 90)
 plt.show() 
+```
 
+### Explode
+
+The `explode` parameter allows you to make one of the wedges stand out.
+
+> - The `explode` parameter, if specified, and not `None`, must be an array with one value for each wedge.
+> - Each value represents how far from the center each wedge is displayed
+{: .prompt-tip}
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+# Pull the "Apples" wedge 0.2 from the center of the pie
+myexplode = [0.2, 0, 0, 0]
+
+plt.pie(y, labels = mylabels, explode = myexplode)
+plt.show() 
+```
+
+![Exploded Pie Chart](../assets/matplotlib_image/image.png)
+
+### Shadow
+
+Add a shadow to the pie chart by setting the `shadows` parameter to `True`
+
+```python
+plt.pie(y, labels = mylabels, shadow = True)
+```
+
+### Colors
+
+Set the color of each wedge with the `colors` parameter.
+
+> The `colors` parameter, if specified, must be an array with one value for each wedge
+{: .prompt-tip}
+
+```python
+mycolors = ["black", "hotpink", "b", "#4CAF50"]
+plt.pie(y, labels = mylabels, colors = mycolors)
+```
+
+### Legend
+
+`legend()` function adds a list of explanation for each wedge
+
+- `title` parameter: add header to the legend
+  
+
+``` python
+plt.legend(title = "Four Friuts:")
 ```
