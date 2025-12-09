@@ -583,6 +583,9 @@ plt.hist(x)
 plt.show() 
 ```
 
+> `bins` argument is used to set the number of bins
+{: .prompt-tip}
+
 ## Pie Charts
 
 Use the `pie()` function to draw pie charts
