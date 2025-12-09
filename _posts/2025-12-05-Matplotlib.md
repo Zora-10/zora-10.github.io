@@ -1,5 +1,5 @@
 ---
-title: Matplotlib Basics
+title: Matplotlib Pyplot Basics
 date: 2025-12-06 21:56:00 +0800
 categories: [Python, Matplotlib]
 tags: [notes] # TAG names should always be lowercase
@@ -13,10 +13,9 @@ Notes were taken from [W3Schools](https://www.w3schools.com/python/matplotlib_in
 
 > Matplotlib is a low level graph plotting library in python that serves as a visualization utility
 {: .prompt-info}
-
-## Pyplot
-
-Most of the Matplotlib utilities lies under the `pyplot` submodule
+> **Most of the Matplotlib utilities lies under the `pyplot` submodule**  
+> *detailed API reference: [matplotlib.pyplot](https://matplotlib.org/stable/api/pyplot_summary.html)*
+{: .prompt-tip}
 
 ``` python
 import matplotlib.pyplot as plt
