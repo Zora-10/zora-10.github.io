@@ -1,5 +1,5 @@
 ---
-title: Matplotlib
+title: Matplotlib Basics
 date: 2025-12-06 21:56:00 +0800
 categories: [Python, Matplotlib]
 tags: [notes] # TAG names should always be lowercase

@@ -1,5 +1,5 @@
 ---
-title: Python Basic
+title: Python Basics
 date: 2025-12-03 16:08:00 +0800
 categories: [Python, Basic]
 tags: [notes] # TAG names should always be lowercase
