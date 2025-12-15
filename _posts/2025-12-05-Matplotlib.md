@@ -683,3 +683,7 @@ plt.pie(y, labels = mylabels, colors = mycolors)
 ``` python
 plt.legend(title = "Four Friuts:")
 ```
+
+## Seaborn
+
+[Seaborn](https://seaborn.pydata.org/tutorial/introduction.html) is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
